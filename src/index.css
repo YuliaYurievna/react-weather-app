@@ -1,1 +1,17 @@
+body {
+	font-family: "Tiro Devanagari Marathi", serif;
+	color: rgba(28, 4, 64, 0.697);
+}
 
+.background-img {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  max-width: 100%;
+  min-height: 100%;
+  z-index: -5;
+  opacity: 0.6;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
