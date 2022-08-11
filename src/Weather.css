@@ -11,7 +11,8 @@
   }
 
   .Weather h1 {
-    font-size: 24px;
+    color: rgba(30, 7, 54, 0.84);
+    font-size: 30px;
     font-weight: 100;
     margin: 20px 0 0 0;
     line-height: 29px;
@@ -30,45 +31,35 @@
   }
 
   .Weather .temperature {
-    font-weight: bold;
-    color: rgb(33, 33, 33);
+    color: rgba(30, 7, 54, 0.84);
     font-size: 64px;
     line-height: 64px;
-    margin-left: 5px;
     font-weight: 400;
     margin-left: 10px;
   }
   
   .Weather canvas {
-    margin: 10px auto;
+    margin: 7px auto;
   }
-  
+
   .Weather .unit {
-    color: rgb(33, 33, 33);
+    color: rgba(30, 7, 54, 0.957);
     font-size: 16px;
     font-weight: 400;
     position: relative;
     line-height: 1;
     top: -34px;
+    text-decoration: none;
+  }
+
+  .Weather a {
+    text-decoration: none;
   }
   
-  .Weather .weather-temperature .active {
-    color: rgb(33, 33, 33);
-    cursor: default;
-  }
-  
-  .Weather .date-now {
-    font-family: "Noto Serif", serif;
+  .Weather .date-now { 
     color: rgba(28, 5, 52, 0.568);
     font-size: 14px;
     font-weight: 600;
-  }
-
-  .Weather canvas {
-    height: 64px;
-    width: 64px;
-    margin-right: 10px;
-    display: inline-block;
   }
   
   .Weather .weather-details-list {
