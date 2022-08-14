@@ -20,7 +20,7 @@ export default function WeatherForecast(props) {
   return (
     <div className='WeatherForecast'>
       <div className='row ms-1 me-1'>
-        {forecast.map(function (dailyForecast, index){
+        {forecast.map((dailyForecast, index) => {
           if ((index+1)%8===0) {
             return (
               <div className='col card pt-2 pb-2 WeatherForecast-elements' key={index}>
