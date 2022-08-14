@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import WeatherInfo from './WeatherInfo';
+import WeatherForecast from './WeatherForecast';
 import axios from 'axios';
 import './Weather.css';
 
@@ -11,6 +12,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -40,7 +42,7 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className='Weather rounded'>
-        <form className="input-group mb-3 shadow search-form" onSubmit={handleSubmit}>
+        <form className="input-group mb-3 shadow search-form me-1" onSubmit={handleSubmit}>
           <input
             type="search"
             className="form-control"
@@ -49,19 +51,14 @@ export default function Weather(props) {
             onChange={handleCityChange}
           />
           <button
-            className="btn btn-outline-dark ml-1 change-city-button"
+            className="btn btn-outline-dark"
             type="submit"
           >
             Search
           </button>
-          <button
-            className="btn btn-outline-dark ml-1 button-current-city"
-            type="button"
-          >
-            <i className="fa-solid fa-location-dot"></i>
-          </button>
         </form>
         <WeatherInfo data={weatherData} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

@@ -55,27 +55,3 @@
   .Weather a {
     text-decoration: none;
   }
-  
-  .Weather .date-now { 
-    color: rgba(28, 5, 52, 0.568);
-    font-size: 14px;
-    font-weight: 600;
-  }
-  
-  .Weather .weather-details-list {
-    color: rgba(28, 5, 52, 0.568);
-    font-size: 14px;
-  }
-  
-  .Weather .weather-temperature .active:hover {
-    text-align: none;
-  }
-  
-  .Weather .degrees {
-    font-size: 59px;
-  }
-  
-  .Weather .units {
-    position: relative;
-    top: -25px;
-  }
